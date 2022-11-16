@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImage from '../assets/logo.jpeg'
+import backgroundImage from '../assets/Netflix-Background-Image.jpeg'
 
 export default function BackgroundImage() {
   return (
@@ -10,4 +10,11 @@ export default function BackgroundImage() {
   )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  img {
+    height: 100vh;
+    width: 100vw;
+  }
+`
