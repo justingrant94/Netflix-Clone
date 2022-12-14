@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 // import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchMovies, getUserLikedMovies } from '../store'
+import { getUserLikedMovies } from '../store'
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
-// import NotAvailable from '../components/NotAvailable'
-// import Slider from '../components/Slider'
-// import SelectGenre from '../components/SelectGenre'
+
 import { onAuthStateChanged } from 'firebase/auth'
 import { firebaseAuth } from '../utilities/firebase-config'
 import { useNavigate } from 'react-router-dom'
@@ -16,11 +14,9 @@ export default function UserLiked() {
   const navigate = useNavigate()
   const [isScrolled, setIsScrolled] = useState(false)
   const movies = useSelector((state) => state.netflix.movies)
-
   const dispatch = useDispatch()
 
   const [email, setEmail] = useState(undefined)
-
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) setEmail(currentUser.email)
     else navigate('/login')
