@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
+import Slider from '../components/Slider'
 
 import BackgroundImage from '../assets/BackgroundImage.jpeg'
 
@@ -20,21 +21,21 @@ export default function Netflix() {
 
   const dispatch = useDispatch()
 
-  // we want to run below once on the first load.
+  // we want to run below once on the first render, first load.
   useEffect(() => {
     dispatch(getGenres())
   }, [dispatch])
 
   useEffect(() => {
     if (genresLoaded) dispatch(fetchMovies({ type: 'all' }))
-  })
+  }, [genresLoaded])
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true)
     return () => (window.onscroll = null)
   }
 
-  console.log(movies)
+  // console.log(movies)
 
   return (
     <Container>
@@ -65,6 +66,8 @@ export default function Netflix() {
           </div>
         </div>
       </div>
+      {/* importing component file */}
+      <Slider movies={movies} />
     </Container>
   )
 }
