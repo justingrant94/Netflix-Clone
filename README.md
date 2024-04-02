@@ -16,7 +16,8 @@ Netflix Cloneeee - CONNECT 4
 5.Prisma
 6.MongoDB
 7.NextAuth
-8.ercel
+8.Vercel
+9. Firebase
 
 
 I created a React component called Login. It's a login form where I can input my email address and password to authenticate. Here's what I did:
@@ -41,7 +42,9 @@ I created a React component called Login. It's a login form where I can input my
 **Process:**
 
 
-Importing Modules and Components: I begin by importing the necessary modules and components that I'll need to create the login form. This includes modules like React and styled-components, as well as custom components like BackgroundImage and Header.
+**Importing Modules and Components:**
+
+I begin by importing the necessary modules and components that I'll need to create the login form. This includes modules like React and styled-components, as well as custom components like BackgroundImage and Header.
 
 Defining State and Functions: Inside my component body, I set up my state using the useState hook. This allows me to keep track of the values entered into the email and password fields of the login form. Additionally, I define a function called handleLogIn, which will be executed when the user clicks the login button. This function attempts to authenticate the user using the provided email and password.
 
