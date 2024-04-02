@@ -6,30 +6,63 @@ Netflix Cloneeee - CONNECT 4
 📫 How to reach me justingrant373@gmail.com
 
 
+**Built With:
+**
+
+1. React.Js
+2. JSX
+3. CSS
+4. AXIOS
+5. GitHub
+6. React-Router-Dom
+7. ReactBootStrap
+
+
+I created a React component called Login. It's a login form where I can input my email address and password to authenticate. Here's what I did:
+
+1. I imported necessary modules and components from react, styled-components, and other custom components.
+2. I defined myself as a functional component named Login.
+3.  I initialised state variables using the useState hook to manage form input values (my email and password).
+4. I defined a function named handleLogIn which gets invoked when I click the login button. This function tries to authenticate me using the signInWithEmailAndPassword function provided by Firebase.
+5. I used the onAuthStateChanged function from Firebase to check if I'm already logged in. If I am, I redirect myself to the home page using the navigate function from react-router-dom.
+6. I rendered JSX elements including a background image, header, form inputs for my email and password, and a login button.
+7. My appearance is styled using CSS-in-JS with styled-components.
+8. Overall, I represent the UI for a login page in a React application, integrated with Firebase authentication.
+
+ I wanted to also emulate the copy of netflix that if the user isnt a member of netflix they would have to sign up which i think i emuolated quite well.
 
 
 <img width="832" alt="Screenshot 2024-04-02 at 17 33 33" src="https://github.com/justingrant94/Netflix-Clone/assets/73545574/f2c6f381-350e-4df8-afe1-c1eac1be7a8e">
 
 
-This is a React component named Login.  Here's a breakdown of what it does:
-
-It imports necessary modules and components from react, styled-components, and other custom components.
-It defines a functional component named Login.
-Inside the component, it initializes state variables using the useState hook to manage form input values (email and password).
-It defines a function handleLogIn which is invoked when the login button is clicked. This function attempts to authenticate the user using the signInWithEmailAndPassword function provided by Firebase.
-It uses the onAuthStateChanged function from Firebase to check if a user is already logged in. If a user is logged in, it redirects them to the home page using the navigate function from react-router-dom.
-It renders JSX elements including a background image, header, form inputs for email and password, and a login button.
-The component is styled using CSS-in-JS with styled-components.
-Overall, this component represents the UI for a login page in a React application, integrated with Firebase authentication.
+**Process:**
 
 
+Importing Modules and Components: I begin by importing the necessary modules and components that I'll need to create the login form. This includes modules like React and styled-components, as well as custom components like BackgroundImage and Header.
+
+Defining State and Functions: Inside my component body, I set up my state using the useState hook. This allows me to keep track of the values entered into the email and password fields of the login form. Additionally, I define a function called handleLogIn, which will be executed when the user clicks the login button. This function attempts to authenticate the user using the provided email and password.
+
+Authentication and Navigation: I use Firebase's authentication functionality to check if the user is already logged in using the onAuthStateChanged function. If the user is logged in, I redirect them to the home page using the navigate function from react-router-dom.
+
+Rendering JSX Elements: In my render function, I create JSX elements to represent the structure and content of the login form. This includes a background image, a header, input fields for the email and password, and a login button. These elements are arranged using flexbox styling to ensure proper layout.
+
+Styling: Lastly, I style the appearance of my components using CSS-in-JS with styled-components. This allows me to define styles directly within my JavaScript code, making it easier to maintain and customize the appearance of my login form.
+
+Overall, I handle the entire process of rendering the login form, managing user input and state, authenticating the user, and handling navigation based on the authentication status.
 
 
+<img width="538" alt="Screenshot 2024-04-02 at 17 42 28" src="https://github.com/justingrant94/Netflix-Clone/assets/73545574/f101ca33-c51f-42e9-8b93-b046e09d28f4">
 
 
+**Deployment
+**
 
-I undertook the development of a Netflix-inspired app clone, which incorporated NextAuth for user authentication and Vercel for seamless deployment. This side project integrated an external API to source data, with a primary emphasis on optimising the user experience. The app's architecture included NextAuth to securely manage user sign-ins, and Vercel served as the hosting and deployment platform, Through this project, I harnessed a range of technical tools and practices to deliver a user-friendly streaming platform, all while maintaining a robust and scalable application infrastructure.
+Link: https://netflix-clone-gray-eta.vercel.app/login
 
-Deploment:
+works well but seems to have issues with Google Chrome.
 
-netflix-clone-gray-eta.vercel.app
+
+**
+Key Takeaways:**
+
+I think the login feature doesn't work exactly how I would love for it to but I am happy with the final as it showed me i would be able to emulate existing sites.
