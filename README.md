@@ -9,8 +9,7 @@ Netflix Cloneeee - Personal Project.
 📫 How to reach me justingrant373@gmail.com
 
 
-**Built With:
-**
+**Built With:**
 
 1.React
 2.Tailwind
