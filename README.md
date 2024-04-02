@@ -9,13 +9,14 @@ Netflix Cloneeee - CONNECT 4
 **Built With:
 **
 
-1. React.Js
-2. JSX
-3. CSS
-4. AXIOS
-5. GitHub
-6. React-Router-Dom
-7. ReactBootStrap
+1.React
+2.Tailwind
+3.CSS
+4.Next.JS
+5.Prisma
+6.MongoDB
+7.NextAuth
+8.ercel
 
 
 I created a React component called Login. It's a login form where I can input my email address and password to authenticate. Here's what I did:
@@ -29,7 +30,9 @@ I created a React component called Login. It's a login form where I can input my
 7. My appearance is styled using CSS-in-JS with styled-components.
 8. Overall, I represent the UI for a login page in a React application, integrated with Firebase authentication.
 
- I wanted to also emulate the copy of netflix that if the user isnt a member of netflix they would have to sign up which i think i emuolated quite well.
+ I wanted to also emulate the copy of Netflix that if the user isn't a member of Netflix they would have to sign up which i think i emulated quite well.
+
+<img width="1472" alt="Screenshot 2024-04-02 at 18 03 07" src="https://github.com/justingrant94/Netflix-Clone/assets/73545574/6fd39cf3-f2f1-4b07-a1b3-5ef971c214ab">
 
 
 <img width="832" alt="Screenshot 2024-04-02 at 17 33 33" src="https://github.com/justingrant94/Netflix-Clone/assets/73545574/f2c6f381-350e-4df8-afe1-c1eac1be7a8e">
@@ -54,15 +57,13 @@ Overall, I handle the entire process of rendering the login form, managing user 
 <img width="538" alt="Screenshot 2024-04-02 at 17 42 28" src="https://github.com/justingrant94/Netflix-Clone/assets/73545574/f101ca33-c51f-42e9-8b93-b046e09d28f4">
 
 
-**Deployment
-**
+**Deployment**
 
 Link: https://netflix-clone-gray-eta.vercel.app/login
 
-works well but seems to have issues with Google Chrome.
+works well but seems to have issues opening up in Google Chrome.
 
 
-**
-Key Takeaways:**
+**Key Takeaways:**
 
-I think the login feature doesn't work exactly how I would love for it to but I am happy with the final as it showed me i would be able to emulate existing sites.
+1. I think the login feature doesn't work exactly how I would love for it to but I am happy with the final as it showed me i would be able to emulate existing sites.
